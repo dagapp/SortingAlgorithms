@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    double * array = (double *)malloc(10 * sizeof(double));
+    double * array = new double[10];
     
     array[0] = 2;
     array[1] = 1;
@@ -18,12 +18,14 @@ int main()
     array[8] = 8;
     array[9] = 6;
     
-    array = SelectSort(array, 10);
+    array = SelectionSort(array, 10);
     
     for (int i = 0; i < 10; i++)
     {
         cout << array[i] << endl;
     }
+    
+    delete [] array;
     
     return 0;
 }
