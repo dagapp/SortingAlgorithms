@@ -1,3 +1,7 @@
+//
+//Example main code
+//
+
 #include <iostream>
 #include "SortingAlgorithms.hpp"
 
